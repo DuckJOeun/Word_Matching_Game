@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link 자리 -->
+    <link rel="stylesheet" href="style_game.css">
+
+    <title>단어 맞추기 게임</title>
+</head>
+    
+<body>
+    <div id="title">단어 맞추기 게임</div>
+
+    <div id="screen">
+        <div id="게임화면">
+            <div class="text"> <!--설명부분-->
+                뒤죽박죽 섞여있는 글자들을
+                <br>
+                적절한 순서로 눌러서
+                <br>
+                단어를 완성해 주세요
+            </div>
+
+            <div id="image"> <!--사진부분-->
+            </div>
+
+            <div id="char"> <!--글자부분-->
+                <div id="글자_1" onclick="" style="background-color: rgb(224, 119, 119);">뒤</div>
+                <div id="글자_2" style="background-color: rgb(93, 166, 191);">죽</div>
+                <div id="글자_3" style="background-color: rgb(172, 172, 89);">박</div>
+                <div id="글자_4" style="background-color: rgb(220, 155, 43);">죽</div>
+            </div>
+
+            <div id="answer"> <!--답안부분-->
+                <div id="답안_1"></div>
+                <div id="답안_2"></div>
+                <div id="답안_3"></div>
+                <div id="답안_4"></div>
+            </div>
+
+            <div id="bottom">
+                <div id="남은문제">5 문제 남았습니다</div>
+                <button id="넘어가기" onclick="">
+                    넘어가기
+                </button>
+            </div>
+        </div>
+
+        <div id="완료화면" style="display:none;">
+            <div class="text">
+                게임을 완료했어요
+                <br>
+                잘 하셨어요
+            </div>
+            <button onclick="restart()">
+                한 번 더 게임하기
+            </button>
+        </div>
+    </div>
+
+    <script src="functions.js"></script>
+</body>
+
+</html>

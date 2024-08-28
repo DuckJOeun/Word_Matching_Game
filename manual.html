@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link 자리 -->
+    <link rel="stylesheet" href="style_manual.css">
+
+    <title>단어 맞추기 게임 - 게임 설명</title>
+</head>
+    
+<body>
+    <button onclick="history.back()">뒤로 가기</button>
+    <h2>단어 맞추기 게임 - 게임 설명</h2>
+    <button id="음성안내" onclick="sound()">📣음성 안내 듣기</button>
+    <div id="text">
+        사진 하나와 여러 개의 글자들이 화면에 나타나요
+        <br><br>
+        사진을 보고 글자의 순서를 적절하게 맞춰서 눌러주세요
+        <br><br> 
+        사진과 맞는 단어를 완성하면 성공이에요
+        <br><br><br>
+        <div style="font-size:medium;">음성안내 - 네이버 클로바더빙</div>
+    </div>
+
+    <script>
+        var audio = new Audio('voice.mp3');
+        audio.loop = false;
+        audio.autoplay = false;
+        audio.volume = 1.0;
+        function sound() {
+            audio.play();
+        }
+    </script>
+</body>
+
+</html>

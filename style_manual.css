@@ -1,0 +1,52 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+body {
+    height: 95%;
+    margin:0;
+    padding: 4%;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    display:grid;
+
+    grid-template-rows: auto auto auto 1fr;
+}
+
+button {
+    display:flex;
+    width: fit-content;
+    font-size: large;
+    
+    background-color:rgb(255, 226, 95);
+    color:rgb(85, 61, 24);
+    border-radius: 10%;
+    border: 2px solid rgb(245, 205, 145);
+}
+#음성안내 {
+    margin-bottom: 5%;
+    background-color: #ffffff;
+    border-color: rgb(217, 186, 30);
+    font-weight: bold;
+    padding: 2%;
+}
+#text {
+    background-color:rgb(254, 255, 245);
+    padding: 5%;
+    overflow-y: auto;
+    white-space: normal;
+    word-wrap: break-word;
+    font-size: 22px;
+}
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #a9a9a9;
+}
