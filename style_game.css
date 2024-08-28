@@ -41,7 +41,7 @@ body {
 }
 #image {
     margin: 2%;
-    background: url(img/1.png) no-repeat center / cover;
+    /* background: url(img/1.png) no-repeat center / cover; */
     aspect-ratio: 3/2;
 
     border-radius: 5%;

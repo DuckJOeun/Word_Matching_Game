@@ -14,7 +14,7 @@
     <div id="title">단어 맞추기 게임</div>
 
     <div id="screen">
-        <div id="게임화면">
+        <div id="게임화면" >
             <div class="text"> <!--설명부분-->
                 뒤죽박죽 섞여있는 글자들을
                 <br>
@@ -27,10 +27,10 @@
             </div>
 
             <div id="char"> <!--글자부분-->
-                <div id="글자_1" onclick="" style="background-color: rgb(224, 119, 119);">뒤</div>
-                <div id="글자_2" style="background-color: rgb(93, 166, 191);">죽</div>
-                <div id="글자_3" style="background-color: rgb(172, 172, 89);">박</div>
-                <div id="글자_4" style="background-color: rgb(220, 155, 43);">죽</div>
+                <div id="글자_1" onclick="letterClick(0)" style="background-color: rgb(224, 119, 119);">뒤</div>
+                <div id="글자_2" onclick="letterClick(1)" style="background-color: rgb(93, 166, 191);">죽</div>
+                <div id="글자_3" onclick="letterClick(2)" style="background-color: rgb(172, 172, 89);">박</div>
+                <div id="글자_4" onclick="letterClick(3)" style="background-color: rgb(220, 155, 43);">죽</div>
             </div>
 
             <div id="answer"> <!--답안부분-->
@@ -42,7 +42,7 @@
 
             <div id="bottom">
                 <div id="남은문제">5 문제 남았습니다</div>
-                <button id="넘어가기" onclick="">
+                <button id="넘어가기" onclick="passBtn()">
                     넘어가기
                 </button>
             </div>
@@ -53,6 +53,9 @@
                 게임을 완료했어요
                 <br>
                 잘 하셨어요
+            </div>
+            <div style="font-size: x-large; width: 100%; display: flex; justify-content: space-evenly;">맞춘 개수 : 
+                <div id="맞춘개수" style="font-weight: bold;"></div>
             </div>
             <button onclick="restart()">
                 한 번 더 게임하기
